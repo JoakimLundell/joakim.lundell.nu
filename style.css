@@ -298,6 +298,9 @@ p.number {
     font-weight: bolder;
     color: var(--grey)
 }
+p.light {
+    color: var(--grey)
+}
 
 .big {
     font-weight: bolder;
