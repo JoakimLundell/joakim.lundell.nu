@@ -64,7 +64,7 @@ section.hero .hero-text {
     text-align: center;
     line-height: var(--hero-text-size);
     transition: all 1s ease;
-    padding: 20px 0;
+    padding: 20px;
     opacity: 0;
     /*transform: scale(0.5);*/
 }
@@ -296,7 +296,7 @@ p.justify {
 p.number {
     font-size: 2rem;
     font-weight: bolder;
-    color: var(--grey)
+    color: rgb(211, 206, 206);
 }
 p.light {
     color: var(--grey)
