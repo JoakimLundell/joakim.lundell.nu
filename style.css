@@ -122,12 +122,12 @@ section.about .about-icon {
     width: 130px; 
     height: 130px;
     float: right;
-    margin: 10px 0 20px 10px;;
+    margin: 10px 0 20px 10px;
     padding-top: 10px;
     background-image: url('./assets/jocke.png');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-size: cover;
     border: 5px solid var(--dark-grey);
 
 }

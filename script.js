@@ -51,7 +51,7 @@ gsap.to(".about-title", {
 });
 
 // About icon
-gsap.to(".about-icon", {
+/*gsap.to(".about-icon", {
     scrollTrigger: {
         trigger: ".about-icon",
         start: "top center",
@@ -62,7 +62,7 @@ gsap.to(".about-icon", {
     backgroundSize: "150%",
     duration: 1,
     ease:"Power2.easeOut"
-});
+});*/
 
 // Tech title
 gsap.to(".tech-heading-title", {
