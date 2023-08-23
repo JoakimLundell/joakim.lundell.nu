@@ -66,6 +66,7 @@ section.hero .hero-text {
     transition: all 1s ease;
     padding: 20px;
     opacity: 0;
+    z-index:10;
     /*transform: scale(0.5);*/
 }
 
