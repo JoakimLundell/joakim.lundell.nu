@@ -27,7 +27,7 @@ gsap.to(".projects-title", {
         start: "top center",
         end: "bottom bottom",
         markers: false,
-        toggleActions: "play reverse play reverse"
+        toggleActions: "play none play reverse"
     },
     x: 0,
     opacity: 1,

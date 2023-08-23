@@ -1,243 +1,244 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Joakim Lundell</title>
-        <link rel="stylesheet" href="./style.css">
-        <link rel="icon" href="./favicon.ico" type="image/x-icon">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto&display=swap" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    </head>
-    <body>
-        <div class="container">
-        
-            <section class="hero">
-                <div class="wrapper">
-                    <div class="hero-hello">
-                        <span id="hello">Hello</span>
-                        <span class="hero-my-name">, my name is</span>
-                    </div>
-                    <div class="hero-text">Joakim Lundell</div>
-                    <div class="hero-statement">
-                        <div class="word">and</div> 
-                        <div class="word"> I</div>
-                        <span class="word"> like</span>
-                        <span class="word"> to</span>
-                        <span class="word"> build</span>
-                        <span class="word"> things</span>
-                        <span class="word"> with</span>
-                        <span class="word code"> code.<span class=underline></span></span>
-                    </div>
-                </div>
-            </section>
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>Joakim Lundell</title>
+            <link rel="stylesheet" href="./style.css">
+            <link rel="icon" href="./favicon.ico" type="image/x-icon">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto&display=swap" rel="stylesheet">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+        </head>
+        <body>
+            <div class="container">
             
-            <section class="about" > 
-                <div class="content" style="padding-bottom: 100px">
+                <section class="hero">
+                    <div class="wrapper">
+                        <div class="hero-hello">
+                            <span id="hello">Hello</span>
+                            <span class="hero-my-name">, my name is</span>
+                        </div>
+                        <div class="hero-text">Joakim Lundell</div>
+                        <div class="hero-statement">
+                            <div class="word">and</div> 
+                            <div class="word"> I</div>
+                            <span class="word"> like</span>
+                            <span class="word"> to</span>
+                            <span class="word"> build</span>
+                            <span class="word"> things</span>
+                            <span class="word"> with</span>
+                            <span class="word code"> code.<span class=underline></span></span>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="about" > 
+                    <div class="content" style="padding-bottom: 100px">
+                        <div class="big-title-wrapper">
+                            <div class="title about-title"> About </div>
+                            <div class="subtitle"> Me </div>
+                        </div>
+                        <div>
+                            <p class="justify">
+                                With over 20 years of experience as a programmer and web developer, I am most
+                                passionate about frontend development. Passionate about creating innovative
+                                and user-friendly digital solutions. I love what I do and take pride in delivering high quality results.</p>
+                            <p class="justify">
+                                Long experience has given me a broad knowledge in different programming languages, frameworks and technologies, 
+                                which allows me to adapt to different project needs. Whether it's building a responsive website, developing an
+                                e-commerce platform or creating custom applications.</p>
+                            <div class="about-icon"></div>
+                            <p style="text-align:justif"> 
+                                In addition to my technical skills, I am friendly, humble and good at collaborating. I believe in building
+                                strong and long-lasting working relationships by being responsive to my clients' needs and being a reliable
+                                and approachable partner.
+                            </p>    
+                        </div>
+                    </div>
+                </section>
+        
+                <div class="projects">
+                    <div style="display: flex; justify-content: center;width: 100%;position: sticky;top: 0px;background-color: var(--background); z-index: 10;">
+                        <div class="big-title-wrapper" style="margin-bottom: 0;">
+                            <div class="title projects-title" style="max-width: 600px; width: 100%; "> Projects</div>
+                            <div class="subtitle"> I made </div>
+                        </div>
+                    </div>
+                    
+                    <section class="project">
+                        <div class="content" style="padding-top: 0;">
+                            <p class="number">01</p>
+                            <div class="box">
+                                <div class="text-wrapper ">
+                                    <div class="title">Friendlyplace.io</div>
+                                    <p>Community with the low-key ambition to make the world a better place. Built it for a friend who came up with the idea and it was worth the effort. So fun.<br />Vue frontend, express REST API and MongoDB <br /><br />Be nice!</p>
+                                    <p>Stack: Vue, NodeJS, Express, JavaScript, HTML, CSS</p>
+                                </div>
+                                <div class="image-wrapper">
+                                    <video controls width="100%"  height="auto" poster="assets/video/friendlyplace_poster.png">
+                                        <source src="assets/video/friendlyplace_480p.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>    
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="project">
+                        <div class="content">
+                            <p class="number">02</p>
+                            <div class="box">
+                                <div class="text-wrapper">
+                                    <div class="title">Survey</div>
+                                    <p>A customer wanted to be able to quickly create a survey and share it with his audience. Scan a QR code, answer the survey and get the result right away. <br /><br />Find out what your customer really thought!</p>
+                                    <p>Stack: Vue, NodeJS, Express, MongoDB, JavaScript, HTML, CSS</p>
+                                </div>
+                                <div class="image-wrapper">
+                                    <video controls width="100%" height="auto"  poster="assets/video/survey_poster.png">
+                                        <source src="assets/video/survey-720p.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>    
+                            </div> 
+                        </div>
+                    </section>
+
+                    <section class="project" style="height: 100vh;">
+                        <div class="content">
+                            <p class="number">03</p>
+                            <div class="box">
+                                <div class="text-wrapper ">
+                                    <div class="title">Askew.se</div>
+                                    <p>Developed for a group of friends who want to better keep track of where everyone was and where they were meant to be. Firebase for Auth and storage. Leaflet to visalize positions.<br /><br />I see you!</p>
+                                    <p>Stack: Vue, Firebase, JavaScript, Leaflet</p>
+                                </div>
+                                <div class="image-wrapper">
+                                    <video controls width="100%" height="auto" poster="assets/video/askew_poster.png">
+                                        <source src="assets/video/askew_480p.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>    
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <section class="project">
+                        <div class="content">
+                            <p class="number">04</p>
+                            <div class="box">
+                                <div class="text-wrapper ">
+                                    <div class="title">Steakstones</div>
+                                    <p>If you are not seen, you do not exist. Built a nice website for a great restaurant. Showing menu, contact information and a easy plan to get there. Done in WordPress.<br /><br />Bon appétit!</p>
+                                    <p>Stack: PHP, Wordpress</p>
+                                </div>
+                                <div class="image-wrapper">
+                                    <video controls width="100%" height="auto" poster="assets/video/steakstones_poster.png">
+                                        <source src="assets/video/steakstones_720p.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>    
+                            </div>
+                        </div>
+                    </section>
+                    
+                    
+                </div>    
+
+                <section class="tech">
+                    
                     <div class="big-title-wrapper">
-                        <div class="title about-title"> About </div>
-                        <div class="subtitle"> Me </div>
+                        <div class="title tech-heading-title"> Technologies </div>
+                        <div class="subtitle"> I know </div>
                     </div>
-                    <div>
-                        <p class="justify">
-                            With over 20 years of experience as a programmer and web developer, I am most
-                            passionate about frontend development. Passionate about creating innovative
-                            and user-friendly digital solutions. I love what I do and take pride in delivering high quality results.</p>
-                        <p class="justify">
-                            Long experience has given me a broad knowledge in different programming languages, frameworks and technologies, 
-                            which allows me to adapt to different project needs. Whether it's building a responsive website, developing an
-                            e-commerce platform or creating custom applications.</p>
-                        <div class="about-icon"></div>
-                        <p style="text-align:justif"> 
-                            In addition to my technical skills, I am friendly, humble and good at collaborating. I believe in building
-                            strong and long-lasting working relationships by being responsive to my clients' needs and being a reliable
-                            and approachable partner.
-                        </p>    
-                    </div>
-                </div>
-            </section>
-     
-            <div class="projects">
-                
-                <div class="big-title-wrapper" style="position: sticky;top: 10px;">
-                    <div class="title projects-title"> Projects </div>
-                    <div class="subtitle"> I made </div>
-                </div>
-                
-                <section class="project">
-                    <div class="content" style="padding-top: 0;">
-                        <p class="number">01</p>
-                        <div class="box">
-                            <div class="text-wrapper ">
-                                <div class="title">Friendlyplace.io</div>
-                                <p>Community with the low-key ambition to make the world a better place. Built it for a friend who came up with the idea and it was worth the effort. So fun.<br />Vue frontend, express REST API and MongoDB <br /><br />Be nice!</p>
-                                <p>Stack: Vue, NodeJS, Express, JavaScript, HTML, CSS</p>
-                            </div>
-                            <div class="image-wrapper">
-                                <video controls width="100%"  height="auto" poster="assets/video/friendlyplace_poster.png">
-                                    <source src="assets/video/friendlyplace_480p.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>    
+
+                    <div style="height: 60px;"></div>
+                    
+                    <div class="tech-titels">
+                        <div class="tech-titel">
+                            <div class="title">Backend</div>
+                            <div>PHP</div>
+                            <div>NodeJS</div>
+                            <div>Java</div>
+                            <p></p>
+                            
+                            <div class="grey">Express</div>
+                            <div class="grey">Rest API</div>
+                            <div class="grey">Soap API</div>
+                            <div class="grey">JWT</div>
+                            <div class="grey">Laravel</div>
+                            <div class="grey">Composer</div>
+                            <div class="grey">Open ESB</div>
+                            <div class="grey">JSON</div>
                         </div>
-                    </div>
-                </section>
-                
-                <section class="project">
-                    <div class="content">
-                        <p class="number">02</p>
-                        <div class="box">
-                            <div class="text-wrapper">
-                                <div class="title">Survey</div>
-                                <p>A customer wanted to be able to quickly create a survey and share it with his audience. Scan a QR code, answer the survey and get the result right away. <br /><br />Find out what your customer really thought!</p>
-                                <p>Stack: Vue, NodeJS, Express, MongoDB, JavaScript, HTML, CSS</p>
-                            </div>
-                            <div class="image-wrapper">
-                                <video controls width="100%" height="auto"  poster="assets/video/survey_poster.png">
-                                    <source src="assets/video/survey-720p.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>    
-                        </div> 
-                    </div>
-                </section>
-
-                <section class="project" style="height: 100vh;">
-                    <div class="content">
-                        <p class="number">03</p>
-                        <div class="box">
-                            <div class="text-wrapper ">
-                                <div class="title">Askew.se</div>
-                                <p>Developed for a group of friends who want to better keep track of where everyone was and where they were meant to be. Firebase for Auth and storage. Leaflet to visalize positions.<br /><br />I see you!</p>
-                                <p>Stack: Vue, Firebase, JavaScript, Leaflet</p>
-                            </div>
-                            <div class="image-wrapper">
-                                <video controls width="100%" height="auto" poster="assets/video/askew_poster.png">
-                                    <source src="assets/video/askew_480p.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>    
+                        <div class="tech-titel">
+                            <div class="title">Frontend</div>
+                            <div>JavaScript</div>
+                            <div>Vue</div>
+                            <div>SolidJS</div>
+                            <div>Angular</div>
+                            <div>Polymer</div>
+                            <div>HTML</div>
+                            <div>CSS</div>
+                            <p></p>
+                            <div class="grey">GSAP</div>
+                            <div class="grey">Vite</div>
+                            <div class="grey">Leaflet</div>
+                            <div class="grey">PWA</div>
+                            <div class="grey">Gulp</div>
+                            <div class="grey">Less</div>
+                            <div class="grey">Sass</div>
+                            <div class="grey">NPM</div> 
                         </div>
-                    </div>
-                </section>
-                
-                <section class="project">
-                    <div class="content">
-                        <p class="number">04</p>
-                        <div class="box">
-                            <div class="text-wrapper ">
-                                <div class="title">Steakstones</div>
-                                <p>If you are not seen, you do not exist. Built a nice website for a great restaurant. Showing menu, contact information and a easy plan to get there. Done in WordPress.<br /><br />Bon appétit!</p>
-                                <p>Stack: PHP, Wordpress</p>
-                            </div>
-                            <div class="image-wrapper">
-                                <video controls width="100%" height="auto" poster="assets/video/steakstones_poster.png">
-                                    <source src="assets/video/steakstones_720p.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>    
+                        <div class="tech-titel">
+                            <div class="title">Database</div>
+                            <div>MongoDB</div>
+                            <div>Firebase</div>
+                            <div>MySQL</div>
+                            <div>MariaDB</div>
+                            <div>SQL</div>
+                            <div>MS SQL</div>
                         </div>
+                        <div class="tech-titel">
+                            <div class="title">System</div>
+                            <div>Windows</div>
+                            <div>Linux</div>
+                            <div>Unix</div>
+                            <p></p>
+                            <div class="grey">GitHub</div>
+                            <div class="grey">VS Code</div>
+                            <div class="grey">WinSCP</div>
+                            <div class="grey">Telnet</div> 
+                            <div class="grey">FileZilla</div>
+                            <div class="grey">AWS</div>
+                            <div class="grey">Azure</div>
+                            <div class="grey">WordPress</div>
+                        </div>
+                        <div class="tech-titel">
+                            <div class="title">EDI & e-invoice</div>
+                            <div>XIB</div>
+                            <div>E-invoice</div>
+                            <div>EDIFACT</div>
+                            <div>XML</div>
+                        </div>    
                     </div>
                 </section>
-                
-                
-             </div>    
 
-            <section class="tech">
-                
-                <div class="big-title-wrapper">
-                    <div class="title tech-heading-title"> Technologies </div>
-                    <div class="subtitle"> I know </div>
-                </div>
+                <section class="footer">
+                    <div class="title">The end</div>
+                    <div class="icon">
+                        <a href="mailto: jocke@bluestripes.se">
+                            <svg class="email"  xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="var(--background)"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
+                        </a>
+                    <div>Get in <a href="mailto: jocke@bluestripes.se">touch!</a></div>
+                </section>
 
-                <div style="height: 60px;"></div>
-                
-                <div class="tech-titels">
-                    <div class="tech-titel">
-                        <div class="title">Backend</div>
-                        <div>PHP</div>
-                        <div>NodeJS</div>
-                        <div>Java</div>
-                        <p></p>
-                        
-                        <div class="grey">Express</div>
-                        <div class="grey">Rest API</div>
-                        <div class="grey">Soap API</div>
-                        <div class="grey">JWT</div>
-                        <div class="grey">Laravel</div>
-                        <div class="grey">Composer</div>
-                        <div class="grey">Open ESB</div>
-                        <div class="grey">JSON</div>
-                    </div>
-                    <div class="tech-titel">
-                        <div class="title">Frontend</div>
-                        <div>JavaScript</div>
-                        <div>Vue</div>
-                        <div>SolidJS</div>
-                        <div>Angular</div>
-                        <div>Polymer</div>
-                        <div>HTML</div>
-                        <div>CSS</div>
-                        <p></p>
-                        <div class="grey">GSAP</div>
-                        <div class="grey">Vite</div>
-                        <div class="grey">Leaflet</div>
-                        <div class="grey">PWA</div>
-                        <div class="grey">Gulp</div>
-                        <div class="grey">Less</div>
-                        <div class="grey">Sass</div>
-                        <div class="grey">NPM</div> 
-                    </div>
-                    <div class="tech-titel">
-                        <div class="title">Database</div>
-                        <div>MongoDB</div>
-                        <div>Firebase</div>
-                        <div>MySQL</div>
-                        <div>MariaDB</div>
-                        <div>SQL</div>
-                        <div>MS SQL</div>
-                    </div>
-                    <div class="tech-titel">
-                        <div class="title">System</div>
-                        <div>Windows</div>
-                        <div>Linux</div>
-                        <div>Unix</div>
-                        <p></p>
-                        <div class="grey">GitHub</div>
-                        <div class="grey">VS Code</div>
-                        <div class="grey">WinSCP</div>
-                        <div class="grey">Telnet</div> 
-                        <div class="grey">FileZilla</div>
-                        <div class="grey">AWS</div>
-                        <div class="grey">Azure</div>
-                        <div class="grey">WordPress</div>
-                    </div>
-                    <div class="tech-titel">
-                        <div class="title">EDI & e-invoice</div>
-                        <div>XIB</div>
-                        <div>E-invoice</div>
-                        <div>EDIFACT</div>
-                        <div>XML</div>
-                    </div>    
-                </div>
-            </section>
+            </div>
 
-            <section class="footer">
-                <div class="title">The end</div>
-                <div class="icon">
-                    <a href="mailto: jocke@bluestripes.se">
-                        <svg class="email"  xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="var(--background)"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></div>
-                    </a>
-                <div>Please get in <a href="mailto: jocke@bluestripes.se">touch</a></div>
-            </section>
-
-        </div>
-
-        <script type="module" src="./script.js"></script>
-    
-    </body>
-</html>
+            <script type="module" src="./script.js"></script>
+        
+        </body>
+    </html>
