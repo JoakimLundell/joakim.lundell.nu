@@ -1,0 +1,445 @@
+* {  box-sizing: border-box; }
+
+:root {
+    --grey: rgb(139, 133, 133);
+    --light-grey: rgba(139, 133, 133, 0.158);
+    --dark-grey: rgb(117, 113, 113);
+    --black: #222024;
+    --background: #FFFDFA;
+    --background-transparent: #fffdfa85;
+    
+    --focus: #000000;
+    --focus-text-shadow: -3px -3px 2px rgb(145, 173, 185), 5px 3px 2px rgb(228, 139, 166);
+
+    --title-big: 4rem;
+    --title-big-line-height: 4rem;
+    --subtitle-big: 2rem;
+    --subtitle-big-line-height: 2rem;
+    --hero-text-size: 3rem;
+  
+}
+
+html, body { margin:0; padding: 0;}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-snap-type: y proximity;
+    background: var(--background);
+    scroll-behavior: smooth;
+}
+
+section { 
+    scroll-snap-align: start;   
+}
+
+section.hero,
+section.about,
+section.tech,
+section.footer { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 24px;
+}
+
+
+section.hero div.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--dark-grey); 
+    transition: all 1s ease; 
+}
+
+
+section.hero .hero-text {
+    color: var(--black);
+    font-family: 'Kaushan Script', cursive;
+    font-size: var(--hero-text-size);
+    font-weight: 600;
+    text-align: center;
+    line-height: var(--hero-text-size);
+    transition: all 1s ease;
+    padding: 20px 0;
+    opacity: 0;
+    /*transform: scale(0.5);*/
+}
+
+section.hero .hero-statement {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    width: 100%;
+}
+
+section.hero .hero-statement .word {
+    margin-right: 6px;
+    transform: translateX(300px);
+}
+
+.word.code {
+    position: relative;;
+}
+.word.code .underline {
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg,#2579be, #d83c97);
+    opacity: 0;
+}
+
+
+/* ABOUT */
+
+section.about h2 {
+    display: inline-block;
+    margin: 40px 0px;
+    padding: 0 0px;  
+}
+
+section.about { position: relative;}
+section.about .content {
+    position: relative;
+    max-width: 472px;
+}
+
+section.about .about-icon-position {
+    position: absolute;
+    bottom: 0; 
+    right: 0;
+}
+
+section.about .about-icon {
+    border-radius: 50%;
+    background: var(--light-grey);
+    width: 130px; 
+    height: 130px;
+    float: right;
+    margin: 10px 0 20px 10px;;
+    padding-top: 10px;
+    background-image: url('assets/jocke.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    border: 5px solid var(--dark-grey);
+
+}
+
+/* PROJECTS AND PROJECT */
+
+div.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+}
+
+section.project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+    align-items: flex-start;
+    min-height: 90vh;
+}
+
+section.project .heading {
+    font-weight: bolder;
+    font-size: 4rem;
+    line-height: 5rem;
+    opacity: 0.15;
+    color: silver;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+section.project .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0px;
+    margin-top: 150px;
+    background-color: var(--background);
+    
+}
+section.project .content .box {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    gap: 12px;
+}
+section.project .content .box .text-wrapper {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    gap: 60px;
+    
+}
+section.project .content .box .image-wrapper {
+    background: transparent;    
+    width: 100%;
+}
+
+video {
+    object-fit: contain;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+/* TECH */
+
+section.tech {
+    min-height: 100vh;
+}
+section.tech .tech-heading {
+    position: relative;
+    max-width: 100%;
+    margin-bottom: 60px;
+}
+
+.tech-heading-title {
+    transform: translateX(-220px);
+    opacity: 0;
+}
+
+section.tech .tech-titels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+section.tech .tech-titel {
+    max-width: 220px;    
+}
+section.tech .tech-titel .title {
+    padding-bottom: 20px;
+}
+
+section.tech .tech-titel div {
+    line-height: 1.5rem;
+}
+section.tech .tech-titel div.grey {
+    color: var(--grey);
+}
+
+.projects-title { 
+    transform: translateX(-780px);
+    opacity: 0;
+    max-width: 780px;
+}
+.about-title {
+    transform: translateX(-400px);
+    opacity: 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0px;
+    
+}
+/* FOOTER */
+
+section.footer .title {
+    font-family: 'Kaushan Script', cursive;
+    font-size: var(--hero-text-size);
+    font-weight: 600;
+}
+
+section.footer .icon {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 50px; 
+    height: 50px; 
+    padding: 5px; 
+    border-radius: 50%; 
+    background-color: var(--black);
+    margin-bottom: 12px;;
+}
+
+
+/* FONTS */
+a { 
+    text-decoration: none; 
+    box-shadow: inset 0 0 0 0 var(--black);
+    color: var(--black);
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+a:hover,
+a:active {
+    box-shadow: inset 100px 0 0 0 var(--black);
+    color: white;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 1;
+    margin: 10px 0 10px 0;    
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5rem;
+}
+p.justify {
+    text-align: justify;
+}
+p.number {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--grey)
+}
+
+.big {
+    font-weight: bolder;
+    font-size: 6.5rem;
+    line-height: 5rem;
+    opacity: 0.15;
+    color: silver;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.big:hover {
+    box-shadow: 2px 2px 4px rgb(207, 139, 228), -2px -2px 4px rgb(43, 173, 233);
+    transition: text-shadow 1s ease ;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 2rem;
+}
+
+.left { text-align: left;}
+.center { text-align: center;}
+.right { text-align: right;}
+
+
+/* BIG TITLE */
+
+.big-title-wrapper {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.big-title-wrapper .title {
+    font-size: var(--title-big);
+    line-height: var(--title-big-line-height);
+    font-weight: bolder;
+    color: var(--light-grey);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+}
+
+.big-title-wrapper .subtitle {
+    position: absolute;
+    color: var(--dark-grey);
+    bottom: 0;
+    left:0;
+    font-size: var(--subtitle-big);
+    line-height: var(--subtitle-big-line-height);
+    font-weight: bolder;
+    line-height: 1;
+    /*-webkit-text-stroke: 5px #ffffff;
+    -webkit-text-fill-color: rgb(34, 33, 33);*/
+}
+
+
+
+@media (min-width: 512px) {
+    
+    :root {
+     
+        --title-big: 5rem;
+        --title-big-line-height: 5rem;
+        --subtitle-big: 3rem;
+        --subtitle-big-line-height: 3rem;
+        --hero-text-size: 4rem;      
+    }
+    section.hero div.wrapper {
+        font-size: 1.2rem;
+        transition: all 1s ease; 
+    }
+
+    section.hero .hero-text {
+        line-height: 6rem;
+        transition: all 1s ease;
+    }
+}
+
+@media (min-width: 650px) {
+    
+    section.project .content .box .text-wrapper {
+        max-width: 300px;
+    }
+    section.project .content .box .image-wrapper {
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 740px) {
+
+    section.hero,
+    section.about,
+    section.tech,
+    section.footer { 
+        padding: 48px;
+    }
+    section.project .content .box {
+        flex-direction: row;
+        gap: 40px;
+        max-width: 740px;
+    }
+
+    video {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    :root {
+     
+        --title-big: 6rem;
+        --title-big-line-height: 6rem;
+        --subtitle-big: 3rem;
+        --subtitle-big-line-height: 3rem;
+        --hero-text-size: 6rem;
+    }
+
+    section.project .content .box {
+        max-width: 900px;
+    }
+
+    section.hero div.wrapper {
+        font-size: 1.5rem;
+        transition: all 1s ease; 
+    }
+
+    section.hero .hero-text {
+        
+        line-height: 8rem;
+        transition: font-size 1s ease;
+    }
+
+    section.project .heading {
+        font-size: 6rem;
+        line-height: 7rem;
+        
+        color: var(--grey);
+        letter-spacing: 6px;
+    }
+    
+}
