@@ -13,8 +13,8 @@
 
     --title-big: 4rem;
     --title-big-line-height: 4rem;
-    --subtitle-big: 2rem;
-    --subtitle-big-line-height: 2rem;
+    --subtitle-big: 2.5rem;
+    --subtitle-big-line-height: 2.5rem;
     --hero-text-size: 3rem;
   
 }
@@ -350,13 +350,21 @@ p.light {
     position: absolute;
     color: var(--dark-grey);
     bottom: 0;
-    left:0;
+    left: 0;
     font-size: var(--subtitle-big);
     line-height: var(--subtitle-big-line-height);
-    font-weight: bolder;
+    font-weight: normal;
     line-height: 1;
+    background-color: #353438;;
+    color: var(--background);
+    background-color: transparent;
+    color: var(--black);
+    padding: 0px 24px 0px 12px;
     /*-webkit-text-stroke: 5px #ffffff;
     -webkit-text-fill-color: rgb(34, 33, 33);*/
+    /*transform: rotate(-2deg);*/
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 600;
 }
 
 
