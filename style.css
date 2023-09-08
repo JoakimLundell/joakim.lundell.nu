@@ -125,7 +125,7 @@ section.about .about-icon {
     float: right;
     margin: 10px 0 20px 10px;
     padding-top: 10px;
-    background-image: url('./assets/jocke.png');
+    background-image: url('./assets/joakim_1000x1333.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -250,20 +250,17 @@ section.tech .tech-heading {
     transform: translateX(-220px);
     opacity: 0;
 }
-
 section.tech .tech-titels {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
-
 section.tech .tech-titel {
     max-width: 220px;    
 }
 section.tech .tech-titel .title {
     padding-bottom: 20px;
 }
-
 section.tech .tech-titel div {
     line-height: 1.5rem;
 }
