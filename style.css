@@ -96,6 +96,19 @@ section.hero .hero-statement .word {
     opacity: 0;
 }
 
+section.hero .arrow-wrapper {
+    margin-top: 100px;
+    position: relative;
+    width: 32px;
+    height: 32px;
+}
+section.hero .arrow-wrapper > .arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 
 /* ABOUT */
 

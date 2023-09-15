@@ -10,11 +10,13 @@ tl.set(".hero-hello", {autoAlpha: 1, x: 50}, 0)
     .set(".hero-my-name", {autoAlpha: 0}, 0)
     .set(".hero-text", {autoAlpha: 0, scale: 0.5}, 0)
     .set(".hero-statement .word", {autoAlpha: 0 , x: 300}, 0)
+    .set(".arrow", {autoAlpha: 0 , y: -100}, 0)
     .to(".hero-hello", { x: 0, duration: 0.5}, 1)
     .to(".hero-my-name", {autoAlpha: 1, duration: 1})
     .to(".hero-text", {scale: 1, autoAlpha: 1, duration: .5, ease: "Back.easeOut"}, 1.9)
     .to(".hero-statement .word", {x: 0, autoAlpha: 1, duration: 2, ease: "Elastic.easeOut", stagger: .1 }, "+=1")
-    .add(t2)
+    //.add(t2)
+    .to(".arrow", {autoAlpha: 1 , y: 0, stagger: .2, ease:Sine.easeInOut}, ">=")
     .play();
 
 
